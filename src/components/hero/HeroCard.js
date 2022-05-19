@@ -21,7 +21,7 @@ characters,
                         <div className="row">
                             <div className="col-ms-4">
                                 <h3>{publisher}</h3>
-                                <p>Primera aparición: <br />{first_appearance}</p>
+                                <p>Primera aparición en cine: <br />{first_appearance}</p>
                                 {
                                     (alter_ego !== characters)
                                     && <p>{characters}</p>

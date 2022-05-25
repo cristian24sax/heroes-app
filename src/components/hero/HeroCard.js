@@ -27,7 +27,7 @@ characters,
                                     && <p>{characters}</p>
                                 }
                             </div>
-                        </div>
+                        </div>``
                     </div>
                 </div>
             

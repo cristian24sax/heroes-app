@@ -23,10 +23,10 @@ export const HeroScreen = () => {
       <div className='col-8 animate__animated animate__fadeIn'>
         <h3 className='m-3'> {hero.superhero}</h3>
         <ul className="list-group list-group-flush ">
-          <li className='list-group-item'><b className='me-3'>Publisher:</b>{hero.publisher}</li>
-          <li className='list-group-item'><b className='me-3'>Alter ego:</b>{hero.alter_ego}</li>
-          <li className='list-group-item'><b className='me-3'>First appearance:</b>{hero.first_appearance}</li>
-          <li className='list-group-item'><b className='me-3'>Characters:</b>{hero.characters}</li>
+          <li className='list-group-item'><b className='me-2'>Publisher:</b>{hero.publisher}</li>
+          <li className='list-group-item'><b className='me-2'>Alter ego:</b>{hero.alter_ego}</li>
+          <li className='list-group-item'><b className='me-2'>First appearance:</b>{hero.first_appearance}</li>
+          <li className='list-group-item'><b className='me-2'>Characters:</b>{hero.characters}</li>
         </ul>
 
         <button className='btn btn-outline-info ms-3 mt-5'

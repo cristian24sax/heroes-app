@@ -32,7 +32,7 @@ export const HeroScreen = () => {
         <button className='btn btn-outline-info ms-3 mt-4'
                 onClick={handleReturn}    
         >
-          regresar
+          Regresar
         </button>
       </div>
  

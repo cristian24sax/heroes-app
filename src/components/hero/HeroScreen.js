@@ -29,7 +29,7 @@ export const HeroScreen = () => {
           <li className='list-group-item'><b className='me-2'>Characters:</b>{hero.characters}</li>
         </ul>
 
-        <button className='btn btn-outline-info ms-3 mt-5'
+        <button className='btn btn-outline-info ms-3 mt-4'
                 onClick={handleReturn}    
         >
           regresar

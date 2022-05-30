@@ -12,22 +12,10 @@ export const SearchScreen = () => {
   const search=query.get("search")
   const handleSubmit=(e)=>{
     e.preventDefault()
-    // console.log(search)
-    // reset()
   }
-  // const getHero = getHeroByName('asdasd')
+
   return (
-    // <form  onSubmit={handleSubmit}>
-    //     <input 
-    //       type='text'
-    //       name='search'
-    //       className='form-control mt-3'
-    //       placeholder='Buscar'
-    //       autoComplete='off'
-    //       value={search}
-    //       onChange={handleInputChange}
-    //     />
-    // </form>
+
     <form  onSubmit={handleSubmit}>
       <input 
         type='text'

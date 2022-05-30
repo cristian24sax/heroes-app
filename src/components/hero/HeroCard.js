@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { heroImages } from '../../helpers/heroImages';
+// import { heroImages } from '../../helpers/heroImages';
 import './HeroCard.css'
+
 export const HeroCard = ({
 id,
 superhero,
@@ -11,9 +14,10 @@ characters,
 }) => {
   
     return (
-        <Link to={`/hero/${id}`} className="my-card">
+        // <Link to={} className="my-card">
+         <Link to={`/hero/${id}`} className="my-card"> 
             
-                <img src={`./assets/${id}.jpg`} className="img img-responsive" alt={superhero}/>
+                <img src={heroImages(`./${id}.jpg`)} className="img img-responsive" alt={superhero}/>
                 <div className="profile-name">{superhero}</div>
                 <div className="profile-position">{alter_ego}</div>
                 <div className="profile-overview">

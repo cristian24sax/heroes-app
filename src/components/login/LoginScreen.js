@@ -1,16 +1,26 @@
 import React,{useContext} from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../auth/authContext'
+import { useForm } from '../../hooks/useForm'
 import { types } from '../../types/types'
 
 export const LoginScreen = () => {
   const navigate=useNavigate()
   const  {dispatch } = useContext(AuthContext)
+  
+  const [Values, handleInputChange]=useForm({
+    nick:""
+  })
+  const {nick} = Values
+  const handleSubmit = (e)=>{
+    console.log('mandando');
+    e.preventDefault()
+  }
   const handleLogin=()=>{
     const action = { 
       type:types.login,
       payload:{
-        name:'cristian',
+        name:nick,
       }
     }
     dispatch(action)
@@ -26,23 +36,23 @@ export const LoginScreen = () => {
       </h1>
       <hr/>
 
-     {/* <form  onSubmit={handleSubmit}>
+     <form  onSubmit={handleSubmit} className="mb-4">
          <input 
           type='text'
-          name='search'
+          name='nick'
           className='form-control mt-3'
-          placeholder='Buscar'
+          placeholder='Ingrese nick'
           autoComplete='off'
-          value={search}
+          value={nick}
           onChange={handleInputChange}
         />
-    </form> */}
       <button
-        className='btn btn-primary'
+        className='btn btn-primary mt-3'
         onClick={handleLogin}
       >
         login
       </button>
+    </form> 
     </div>
   )
 }
